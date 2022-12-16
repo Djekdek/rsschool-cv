@@ -1,0 +1,52 @@
+/*my css*/
+* {
+    box-sizing: border-box;
+  }
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    background-color: #829985;;
+}
+.main{
+    border: 1px solid red;
+}
+.footer{
+    border: 1px solid red;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.nav-item a{
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+.nav-item a:hover{
+    color: #4d2323;
+}
+.nav-link{
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 5px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s;
+
+}
