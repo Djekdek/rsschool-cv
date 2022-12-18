@@ -1,10 +1,151 @@
-h1{
-    color:blueviolet
+/*my css*/
+* {
+    box-sizing: border-box;
+  }
+.body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #686868;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-p{
-    color: darkblue;
+.header{
+    background-color: #4D4D4D;
 }
-img{
-    width: 230px;
-    height: 300px;
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
 }
+/*header*/
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.nav-item a{
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+.nav-item a:hover{
+    color: #7f7f7f;
+}
+.nav-link{
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 5px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+/*main*/
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section{
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #672f2f;
+}
+.profile-section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    border-bottom: 15px solid #8b8b8b;
+}
+.my-logo{
+    width: 215x;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 260px;
+}
+.profile-section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.first-section-title{
+    color: #4D4D4D;
+    font-size: 32px;
+    font-weight: 300;
+}
+.section-title{
+    color: #424242;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.list-item-info{
+    text-decoration: none;
+    color: #292929;
+    transition: text-decoration 0.5s 1s;
+}
+.list-item-info:hover{
+    text-decoration: underline;
+}
+.last{
+    border-bottom: 0;
+}
+.section-list-item{
+    list-style-type: circle;
+
+}
+/*footer*/
+.footer{
+    background-color: #4D4D4D;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+.footer-info{
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo-imeg{
+    width: 80px;
+    height: 80px;
+}
+.time-createt{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.git-linc{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: color 0.5s;
+}
+.git-linc:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+/*media*/
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
